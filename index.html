@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h1>Expense Tracker</h1>
+
+    <div class="form">
+        <input type="number" placeholder="Amount" id="amount">
+        <input type="date" id="date">
+
+        <select id="selection">
+            <option>Loading categories...</option>
+        </select>
+
+        <textarea id="story" placeholder="What you spent"></textarea>
+
+        <div class="buttons">
+            <button onclick="add()">Add Expense</button>
+            <button onclick="display()">Show All</button>
+        </div>
+    </div>
+
+    <input type="search" id="search" placeholder="Search expense..." onkeyup="search()">
+
+    <div class="results">
+        <h3>Search Result</h3>
+        <div id="searchresult"></div>
+
+        <h3>All Expenses</h3>
+        <div id="result"></div>
+    </div>
+</div>
+
+</body>
+</html>
